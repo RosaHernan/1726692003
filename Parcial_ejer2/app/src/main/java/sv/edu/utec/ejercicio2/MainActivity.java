@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         txtnum.findViewById(R.id.edtPeso);
         txtesta1 .findViewById(R.id.edtestatura);
-        txtesturam.findViewById(R.id.edtestm );
+        View viewById = txtesturam.findViewById(R.id.edtestm);
+
 
     }
     public void imc(View v){
