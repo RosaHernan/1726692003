@@ -1,11 +1,13 @@
 package sv.edu.utec.parcial_ejer2;
 
 import android.content.Context;
+import android.icu.text.Transliterator;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -16,7 +18,8 @@ public class adaptador extends BaseAdapter  {
     List<String>contactos;
     List<String>cargo;
     List<String>compania;
-    int [] img;
+    int [] imagenes;
+
 
     public adaptador(Context contexto, Layout layout, List<String> contactos, List<String> cargo, List<String> compania, int[] img) {
         this.contexto = contexto;
@@ -24,7 +27,7 @@ public class adaptador extends BaseAdapter  {
         this.contactos = contactos;
         this.cargo = cargo;
         this.compania = compania;
-        this.img = img;
+        this.imagenes = img;
     }
 
     @Override
@@ -43,16 +46,26 @@ public class adaptador extends BaseAdapter  {
     }
 
     @Override
-    public View getView(int i, View convertView, ViewGroup viewGroup) {
+    public View getView(int position , View convertView, ViewGroup viewGroup) {
        View v =convertView;
         LayoutInflater  layoutInflater = LayoutInflater.from(contexto) ;
         v=layoutInflater.inflate(R.layout.elementos,null );
 
-        TextView txtcontactos= v.findViewById(R.id.textView3) ;
+        TextView txtcontactos= v.findViewById(R.id.nombre) ;
 
-        int position = 0;
-        txtcontactos.setText(contactos.get(position);
+        txtcontactos.setText(contactos.get(position));
 
-        return null;
+        TextView txtcargo= v.findViewById(R.id.textView5 ) ;
+
+        txtcargo.setText(cargo.get(position));
+
+        TextView txtcompania= v.findViewById(R.id.textView6);
+
+        txtcompania.setText(compania.get(position));
+
+        ImageView img=v.findViewById(R.id.imageView) ;
+        img.setImageResource(imagenes[position]);
+
+        return v ;
     }
 }

@@ -81,11 +81,11 @@ public class MainActivity extends AppCompatActivity {
 
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                AdapterView<Adapter> parent;
-                parent = null;
-                int position;
-                Toast.makeText(getApplicationContext(),"Selecciono"+parent.getItemAtPosition(position).toString(),Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                AdapterView<Adapter> parent = null;
+
+                Toast.makeText(getApplicationContext(),
+                        "Selecciono"+parent.getItemAtPosition(position).toString(),Toast.LENGTH_SHORT).show();
             }
         });
 
