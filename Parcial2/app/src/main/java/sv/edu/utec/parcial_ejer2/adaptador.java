@@ -14,14 +14,14 @@ import java.util.List;
 
 public class adaptador extends BaseAdapter  {
     Context contexto;
-    Layout layout;
+    int layout;
     List<String>contactos;
     List<String>cargo;
     List<String>compania;
     int [] imagenes;
 
 
-    public adaptador(Context contexto, Layout layout, List<String> contactos, List<String> cargo, List<String> compania, int[] img) {
+    public adaptador(Context contexto, int layout, List<String> contactos, List<String> cargo, List<String> compania, int[] img) {
         this.contexto = contexto;
         this.layout = layout;
         this.contactos = contactos;

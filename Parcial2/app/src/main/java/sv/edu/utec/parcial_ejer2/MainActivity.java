@@ -76,7 +76,8 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.lead_photo_10,
         };
 
-        ArrayAdapter<String> adaptador=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+       // ArrayAdapter<String> adaptador=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
+         adaptador  adaptador = new adaptador(this,R.layout.elementos,contactos,cargo,compania,pictures);
         lista.setAdapter(adaptador);
 
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
