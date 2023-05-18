@@ -41,13 +41,13 @@ public class MainActivity extends AppCompatActivity {
 
                    case R.id.Clientes:
                        drwLayout.closeDrawer(GravityCompat.START);
-                       Toast.makeText(getApplicationContext(),"Mensaje",Toast.LENGTH_LONG).show();
+                       Toast.makeText(getApplicationContext(),"Clients",Toast.LENGTH_LONG).show();
                        fragmentsR(new ClientesFragment());
                        break;
 
                    case R.id.Vehiculo:
                        drwLayout.closeDrawer(GravityCompat.START);
-                       Toast.makeText(getApplicationContext(),"Vehiculos",Toast.LENGTH_LONG).show();
+                       Toast.makeText(getApplicationContext(),"Vehicular",Toast.LENGTH_LONG).show();
                        fragmentsR(new vehiculoFragment());
 
                        break;
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                    case R.id.Registro:
                        fragmentsR(new RegistroFragment());
                        drwLayout.closeDrawer(GravityCompat.START);
-                       Toast.makeText(getApplicationContext(),"Registro",Toast.LENGTH_LONG).show();
+                       Toast.makeText(getApplicationContext(),"Registry",Toast.LENGTH_LONG).show();
                        break;
 
                    }

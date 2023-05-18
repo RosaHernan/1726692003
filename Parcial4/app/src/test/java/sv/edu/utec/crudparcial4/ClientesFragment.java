@@ -5,9 +5,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+
 import sv.edu.utec.crudparcial4.R;
 
-public class ClientesFragment {
+public class ClientesFragment extends Fragment {
+
+
+
+    public ClientesFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,4 +31,3 @@ public class ClientesFragment {
         return inflater.inflate(R.layout.fragment_clientes, container, false);
     }
 }
-

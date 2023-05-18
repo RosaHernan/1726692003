@@ -17,7 +17,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        app:title="Barra"
+        app:title="PARCIAL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:titleTextColor="@color/black"
