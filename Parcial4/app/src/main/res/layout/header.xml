@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#8E8181"
+    android:gravity="bottom"
+    android:layout_height="175dp"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/principal_icono" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="TALLER DE VEHICULOS"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="33dp"
+        android:paddingLeft="20dp"
+        android:text="REGISTRO"
+        android:textColor="@color/white"
+        android:textSize="9sp"
+        android:textStyle="normal" />
+
+
+</LinearLayout>
