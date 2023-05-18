@@ -11,9 +11,9 @@ public class baseHelper extends SQLiteOpenHelper{
 
     private static final int VERSION_BASEDATOS=1;
     private static final String NOMBRE_BASE="TALLER.db";
-    private static final String NOMBRE_TABLAPR="t_Clientes";
-    private static final String NOMBRE_TABLAcl="t_Vehiculo";
-    private static final String NOMBRE_TABLApr="t_Clientes";
+    private static final String NOMBRE_TABLACL="t_Clientes";
+    private static final String NOMBRE_TABLAVH="t_Vehiculo";
+    private static final String NOMBRE_TABLARG="t_Registro";
 
 
     public baseHelper(@Nullable Context context) {
@@ -23,7 +23,7 @@ public class baseHelper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("CREATE TABLE"+NOMBRE_TABLApr+"("+
+        db.execSQL("CREATE TABLE"+NOMBRE_TABLACL+"("+
                 "IDCliente INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "NOMBRE  TEXT NOT NULL,"+
                 "APELLIDO TEXT NOT NULL,"+
@@ -35,7 +35,7 @@ public class baseHelper extends SQLiteOpenHelper{
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE "+NOMBRE_TABLAPR);
+        db.execSQL("DROP TABLE "+NOMBRE_TABLACL);
 
     }
 }

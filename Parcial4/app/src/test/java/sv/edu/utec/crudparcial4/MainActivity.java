@@ -18,7 +18,7 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity {
 
     DrawerLayout drwLayout;
-    Toolbar tlBarra;
+    Toolbar tlTaller;
     NavigationView navView;
 
     @Override
@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tlBarra= findViewById(R.id.toolbar);
+        tlTaller= findViewById(R.id.toolbar);
         drwLayout = findViewById(R.id.drawerLayout);
         navView = findViewById(R.id.navigator);
-       ActionBarDrawerToggle toggle= new ActionBarDrawerToggle(this,drwLayout,tlBarra,R.string.open,R.string.close);
+       ActionBarDrawerToggle toggle= new ActionBarDrawerToggle(this,drwLayout,tlTaller,R.string.open,R.string.close);
        drwLayout.addDrawerListener(toggle);
        toggle.syncState();
        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.white, null));
@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
            }
        });
 
+    }
+
+    private void fragmentsR(vehiculoFragment vehiculoFragment) {
     }
 
     private void fragmentsR(RegistroFragment registroFragment) {
