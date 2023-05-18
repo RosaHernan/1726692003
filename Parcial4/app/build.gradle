@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'sv.edu.utec.crudparcial4'
+    namespace 'sv.edu.utec.crud'
     compileSdk 33
 
     defaultConfig {
-        applicationId "sv.edu.utec.crudparcial4"
+        applicationId "sv.edu.utec.crud"
         minSdk 24
         targetSdk 33
         versionCode 1
